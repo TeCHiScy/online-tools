@@ -127,7 +127,7 @@
     !!(t.Blob && t.URL && t.URL.createObjectURL) ||
       (++waitLoadCount,
       ot
-        .createOnDemandScript("js/data-uri-download-builder.js")
+        .createOnDemandScript("/js/data-uri-download-builder.js")
         .load(function () {
           methodLoad();
         })));

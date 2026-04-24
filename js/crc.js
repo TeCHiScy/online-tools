@@ -40,7 +40,7 @@
     i(),
     ++waitLoadCount,
     ot
-      .createOnDemandScript(["js/crc.min.js?v=0.3.0", "js/models.min.js"])
+      .createOnDemandScript(["/js/crc.min.js?v=0.3.0", "/js/models.min.js"])
       .load(function () {
         methodLoad();
       }));

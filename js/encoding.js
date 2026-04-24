@@ -91,9 +91,9 @@
     p = window.TextEncoder,
     v = window.TextDecoder,
     h = {
-      encoding: ot.createOnDemandScript("js/encoding.min.js?v=1"),
-      encodingIndexes: ot.createOnDemandScript("js/encoding-indexes.min.js"),
-      base64: ot.createOnDemandScript("js/base64.min.js"),
+      encoding: ot.createOnDemandScript("/js/encoding.min.js?v=1"),
+      encodingIndexes: ot.createOnDemandScript("/js/encoding-indexes.min.js"),
+      base64: ot.createOnDemandScript("/js/base64.min.js"),
     };
   ((ot.onDemandScripts = h),
     (ot.hexToBytes = n),
@@ -129,7 +129,7 @@
             methodLoad());
         }))
       : (++waitLoadCount,
-        ot.createOnDemandScript("js/utf8.js").load(function () {
+        ot.createOnDemandScript("/js/utf8.js").load(function () {
           methodLoad();
         })));
 })();

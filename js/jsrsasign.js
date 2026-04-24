@@ -127,7 +127,7 @@
     )
       return new Promise(function (e) {
         o
-          ? ((f = new Worker("js/jsrsasign-worker.js")),
+          ? ((f = new Worker("/js/jsrsasign-worker.js")),
             (f.onmessage = function (t) {
               ((f = null), e(n(t.data)));
             }),

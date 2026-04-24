@@ -21,7 +21,7 @@
     }),
     window.base64 ||
       (++waitLoadCount,
-      ot.createOnDemandScript("js/base64.min.js").load(function () {
+      ot.createOnDemandScript("/js/base64.min.js").load(function () {
         methodLoad();
       })),
     (ot.DownloadBuilder = t));
