@@ -340,7 +340,7 @@
     buildSections(menuData) +
     "</div></div>";
 
-  var el = document.getElementById('sidebar');
+  var el = document.getElementById("sidebar");
   if (!el) return;
   el.outerHTML = html;
 

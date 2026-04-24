@@ -75,7 +75,6 @@
     if ((s(), "text" === n.val())) return y();
     if (g) {
       if (!t.FileReader) return r.text("Your browser does not support.");
-      gtag("event", "submit");
       var e = t.PROCESSING_MESSAGE || "hashing...";
       if (((w = new FileReader()), method.update)) {
         var o = t.FILE_BATCH_SIZE || 2097152,

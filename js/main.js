@@ -193,7 +193,6 @@
     }));
   var p = "REMEMBER_INPUT";
   e.swap = function (e, a) {
-    gtag("event", "swap");
     for (var o = {}, n = 0; n < a.length; ++n) {
       var r = a[n],
         i = t(r[0]);
@@ -230,7 +229,7 @@
         if (method)
           try {
             if ((d(), (val = m(p)), !1 === val)) return;
-            (gtag("event", "submit"), handleOutput(method(val)));
+            handleOutput(method(val));
           } catch (t) {
             y.val(t);
           }
@@ -299,8 +298,7 @@
           localStorage.setItem(
             "DARK",
             t("html").hasClass("dark-theme") ? 1 : 0,
-          ),
-          gtag("event", "theme"));
+          ));
       }),
       t('[data-toggle="copyblock"]').each(function () {
         var e = t(this),
@@ -326,7 +324,7 @@
         var e = t(this),
           a = e.closest(".block");
         e.click(function () {
-          (a.toggleClass("fullscreen"), gtag("event", "fullscreen"));
+          a.toggleClass("fullscreen");
         });
       }),
       t("summary").on("click", ".toolbar", function (t) {
