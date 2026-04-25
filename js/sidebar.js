@@ -7,6 +7,7 @@
         {
           summary: "MD",
           items: [
+            { href: "/md-hash.html", text: "MD2 / MD4 / MD5" },
             { href: "/md2.html", text: "MD2" },
             { href: "/md2_file_hash.html", text: "MD2 File" },
             { href: "/md4.html", text: "MD4" },
